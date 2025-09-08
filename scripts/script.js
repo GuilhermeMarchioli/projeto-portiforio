@@ -1,3 +1,5 @@
+onload(alert("Site ainda em construção!"))
+
 const botao = document.getElementById('botao-tema');
 const body = document.body;
 
