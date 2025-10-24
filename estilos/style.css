@@ -126,6 +126,7 @@ article {
 
 article h2 {
   color: var(--destaque);
+  margin-bottom: 20px;
 }
 
 article#video-container {
@@ -183,4 +184,37 @@ div#video-container iframe {
   #skill-container {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+#formacao-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 30px;
+}
+
+#formacao-container .curso {
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  padding-left: 15px;
+  transition: all 0.5s;
+}
+
+#formacao-container .curso:hover {
+  border-left-width: 15px;
+  border-color: var(--destaque);
+  scale: 105%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#formacao-container .periodo {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#formacao-container .instituicao {
+  color: var(--destaque-inverso);
+  font-size: 1.1em;
 }
